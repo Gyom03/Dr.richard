@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Inter-regular';
+    src: URL('font/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-medium';
+    src: URL('font/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: URL('font/Inter-SemiBold.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter-regular';
+    margin: 0;
+}
+
+header{
+    background-image: url('img/IMG_8842-denoise2-min.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+#right-column{
+    text-shadow: 1px 2px 5px rgb(49, 49, 49);
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-bottom: 100px;
+}
+
+.round{
+    border-radius: 50%;
+
+}
+
+.medium{
+    font-family: 'Inter-medium';
+    font-size: 1.3rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    white-space: nowrap;
+}
+
+#adress{
+    text-align: center;
+}
+
+#right-column > img {
+    width: 60%;
+    margin-top: 50px;
+}
+
+#links{
+    margin-top: 15px;
+}
+#links > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+#prix-btn-a{
+    margin-top: 40px;
+    font-family: "Inter-regular";
+}
+
+#prix-btn{
+    font-size: 1rem;
+}
+
+#smol{
+    font-size: 0.8rem !important;
+}
+
+
+.info{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main img{
+    width: 20%;
+}
+
+#rdv{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    border: 0;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Inter-bold';
+}
+
+#small-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#small-info > *{
+    margin: 5px;
+}
+
+#cabinet-mobile{
+    display: none;
+}
+
+#diabète, #thyroide, #hyperglycémie{
+    flex-direction: row;
+    background-color: rgb(231, 231, 231);
+}
+
+.txt_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+#hidden{
+    display: none;
+}
+
+#contact1{
+    
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    bottom: 15px; 
+    right: 0;
+    background-color: white;
+    color: black;
+}
+
+#contact2{
+    display: none;
+}
+
+button{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.button1{
+    margin-top: 30px;
+    background-color: white;
+}
+
+.button2{
+    margin-top: 30px;
+    background-color: rgb(231, 231, 231);
+}
+
+footer{
+    color: white;
+    background-color: rgb(38, 38, 38);
+    min-height: 150px;
+    position: relative;
+}
+
+footer > p{
+    padding: 0;
+    margin: 0;
+}
+
+#footer-info{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+@media screen and (max-width:1250px){
+    #right-column{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:750px){
+    #right-column{
+        width: 310px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    #hidden{
+        display: block;
+    }
+
+    #showed{
+        display: none;
+    }
+
+    #rdv{
+        position: static;
+        border: 0;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #contact1{
+        display: none;
+    }
+
+    #contact2{
+        margin-top: 25px;
+        display: block;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    #diabète, #thyroide,#hyperglycémie{
+        flex-direction: column;
+        
+    }
+
+    main img{
+        width: 65%;
+    }
+
+    .txt_info{
+        max-width: 75%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    #right-column{
+        width: 100%;
+    }
+
+    #cabinet-mobile{
+        display: block;
+        width: 100%;
+    }
+}
