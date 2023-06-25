@@ -107,7 +107,7 @@ main img{
 
 #rdv{
     position: absolute;
-    top: 30px;
+    top: 175px;
     right: 40px;
     border: 0;
     padding: 20px;
@@ -204,6 +204,18 @@ footer > p{
     transform: translate(0,-50%);
 }
 
+#logo{
+   
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    width: 10vh;
+    padding: 25px;
+    background-color: #fdfdfc;
+    border-radius: 15px;
+    
+}
+
 @media screen and (max-width:1250px){
     #right-column{
         width: 400px;
@@ -218,6 +230,13 @@ footer > p{
 
 @media screen and (max-width:600px){
 
+    #logo{
+        top: 15px;
+        right: 20px;
+        width: 7vh;
+        padding: 15px;
+        
+    }
     #hidden{
         display: block;
     }
