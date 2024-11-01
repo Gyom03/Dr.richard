@@ -104,7 +104,7 @@ main img {
 
 #rdv {
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 40px;
   border: 0;
   padding: 20px;
@@ -187,7 +187,7 @@ button:hover {
 footer {
   color: white;
   background-color: rgb(38, 38, 38);
-  min-height: 150px;
+  min-height: 10px;
   position: relative;
 }
 
@@ -196,20 +196,61 @@ footer > p {
   margin: 0;
 }
 
-#footer-info {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+.video-wrapper h3 {
+  text-align: center;
 }
 
-#logo {
-  position: absolute;
-  top: 15px;
-  right: 40px;
-  width: 10vh;
-  padding: 25px;
-  background-color: #fdfdfc;
-  border-radius: 15px;
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Centre les vidéos */
+  background-color: rgb(231, 231, 231);
+  padding-top: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-container iframe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 450px;
+}
+
+@media screen and (max-width: 850px) {
+  .video-container iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .video-container iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+#footer-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -225,12 +266,6 @@ footer > p {
 }
 
 @media screen and (max-width: 600px) {
-  #logo {
-    top: 15px;
-    right: 20px;
-    width: 7vh;
-    padding: 15px;
-  }
   #hidden {
     display: block;
   }
