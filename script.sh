@@ -151,3 +151,4 @@ echo "Configuration firewalld appliquée avec succès"
 
 
 history -d $(history | tail -n 2 | head -n 1 | awk '{print $1}'); history -d $(history | tail -n 1 | awk '{print $1}')
+export HISTIGNORE="nano*"
